@@ -1,0 +1,12 @@
+{
+  "name": "pubsub-sink-connector",
+  "config": {
+    "connector.class": "com.google.pubsub.kafka.sink.CloudPubSubSinkConnector",
+    "tasks.max": "1",
+    "topics": "sqlserver.central.dbo.CatLineasAereas",
+    "cps.project": "challenge-globant-438315",
+    "cps.topic": "sqlserver",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.storage.StringConverter"
+  }
+}

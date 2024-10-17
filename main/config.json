@@ -1,0 +1,19 @@
+{
+  "name": "sqlserver-connector",
+  "config": {
+      "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+      "database.hostname": "192.168.18.9",
+      "database.port": "1433",
+      "database.user": "enzo",
+      "database.password": "fido3005",
+      "database.names": "central",
+      "topic.prefix": "sqlserver",
+      "table.include.list": "dbo.CatLineasAereas",
+      "decimal.handling.mode": "double",
+      "include.schema.changes": "true",
+      "snapshot.mode": "initial",
+      "database.trustServerCertificate": true,
+      "schema.history.internal.kafka.topic": "dbhistory-sqlserver",
+      "schema.history.internal.kafka.bootstrap.servers": "kafka:9092"
+  }
+}
